@@ -1,9 +1,11 @@
+
 name: MoGuDing-Auto
 
 on:
   workflow_dispatch:
   schedule:
     - cron: '0 23,18 * * *'
+    
 
 jobs:
   build:
@@ -37,3 +39,5 @@ jobs:
           AUTHOR: ${{ secrets.AUTHOR }}
       run: |
  python MoGuDing.py
+ 
+ 
