@@ -3,7 +3,7 @@ name: MoGuDing-Auto
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 07 * * *'
+    - cron: '00 10 * * *'
 
 jobs:
   build:
